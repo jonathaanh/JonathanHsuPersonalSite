@@ -57,8 +57,8 @@ function addStar() {
   scene.add(star);
 }
 function addBox() {
-  const geometry = new THREE.BoxGeometry(3, 3, 3);
-  const material = new THREE.MeshBasicMaterial({transparent: true});
+  const geometry = new THREE.BoxGeometry(0.25, 20, 20);
+  const material = new THREE.MeshLambertMaterial({color: 0xffffff, transparent: true, opacity: 0.5});
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
